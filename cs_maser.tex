@@ -1,15 +1,116 @@
+\documentclass[twocolumn]{aastex62}
 \input{preface}
 
+\begin{document}
 We report the discovery of maser emission in the two lowest transitions of CS.
 
-\begin{figure}
-    \includegraphics{figures/W51e2e_sio_outflow_with_CS_contours.pdf}
+\section{Observations}
+We report observations from three different observing programs....
+
+We measure an offset between the VLA and ALMA images using
+the \texttt{image-registration} toolkit to cross-correlate the images
+of e2.  The total measured offset is 0.029\arcsec, which is less than
+a beam in all of the data sets used here.  The pointing uncertainty should
+therefore be regarded as at least 0.029\arcsec.  We have corrected
+the VLA Q-band images to match the ALMA images, assuming the ALMA
+data have more reliable absolute positions.
+
+\section{Results}
+We report the detection of two transitions of CS, J=2-1 and J=1-0, with
+peak brightness $T_{B,max}\approx6000$ K.
+These lines peak at different locations both spatially (Figure
+\ref{fig:overlay}) and spectrally (Figure \ref{fig:spectra}).
+
+The CS J=2-1 line is observed in the blueshifted component of the outflow.
+It has both a compact component, which we will refer to as the CS 2-1 maser,
+and an extended component that traces the inner envelope of the blueshifted
+outflow.  This extended component can be seen more clearly in the 42 \kms
+channel of the channel maps (Figure \ref{fig:channelmaps}).  The maser
+peak is located at the base of the blueshifted outflow (Figure
+\ref{fig:overlay}) at a velocity of $v_{lsr}=34.50\pm0.07$ \kms.
+
+\begin{figure*}[htp]
+    \includegraphics[width=\textwidth]{figures/W51e2e_sio_outflow_with_CS_contours.pdf}
+    \caption{An image of the SiO 5-4 outflow (red and blue corresponding to
+    red and blueshifted emission integrated over 74-118 \kms and -32 to 55
+    \kms, respectively) with continuum shown in green.  The contours show SiO
+    2-1 in red (0.05, 0.1 K \kms) and blue (0.1, 0.2 K \kms), the CS 2-1
+    maser in white (0.1, 0.2, 0.5, 0.8 K \kms integrated over -32 to 55 \kms),
+    and the CS 1-0 maser in black (2000, 4000, 8000 K peak intensity over
+    the range 55-74 \kms).  }
+    \label{fig:overlay}
+\end{figure*}
+
+The CS J=1-0 line is only seen as a single spatial component centered
+at approximately $v_{lsr}=64 \pm 6$ \kms.  It is centered closer to the
+central continuum source, but still slightly toward the blueshifted outflow.
+The CS J=1-0 and J=2-1 masers are offset by 0.03\arcsec (150 AU), which is
+marginally significant given the absolute positional offsets.
+
+\begin{table*}[htp]
+\centering
+\caption{Line Fit Parameters}
+\begin{tabular}{llllll}
+    \label{tab:observations}
+Line Name & Amplitude & $v_{LSR}$ & $\sigma_{FWHM}$ & RA   & Dec \\
+          &         K &      \kms &            \kms & \deg & \deg \\
+\hline
+\input{linefit_table}
+\hline
+\end{tabular}
+\par
+Because of the coarse spectral resolution, the amplitude of the CS 1-0 line is
+poorly constrained, and we report its fitted width and centroid assuming a
+fixed amplitude of 6800 K.
+\end{table*}
+
+
+\begin{figure}[htp]
+\includegraphics[width=0.45\textwidth]{figures/CS1-0_maser_JyandK.pdf}
+\includegraphics[width=0.45\textwidth]{figures/CS2-1_maser_JyandK.pdf}
+\caption{Plots of the (a) CS 1-0 and (b) CS 2-1 spectra toward their
+respective peaks at XX and YY.}
+\label{fig:spectra}
 \end{figure}
 
-\begin{figure}
-\includegraphics{figures/CS1-0_maser_Jy.pdf}
-\includegraphics{figures/CS2-1_maser_Jy.pdf}
-\end{figure}
+
+\section{Analysis}
+The peak brightness of the observed lines is $\sim6800$ K at $\sim0.07\arcsec$
+(350 AU at 3 mm) and $\sim0.04\arcsec$ (200 AU at 7 mm) resolution.  It is unlikely that the
+molecules are in thermal equilibrium at $T_K \geq 6000$ K, since such high
+temperatures would more likely result in dissociation of the molecules
+\citep{Black?}.
+
+At the observed spectral resolution of 3 \kms and 6 \kms, the CS J=2-1 line is
+marginally resolved with FWHM=5.25 \kms and the CS J=1-0 line is unresolved.
+Since the inferred line width and the observed spectral resolution are both
+much greater than the thermal width for CS at 6000 K, $v_{therm}\approx1~\kms$,
+we cannot conclude anything about the intrinsic line width.
+
+While both transitions have a consistent peak brightness of $\sim6800$ K,
+which is not typical of maser transitions, these emission peaks are at
+different velocities and may be from different spatial locations (separated
+by about 150 AU), and therefore they are not emitted by the same material.
+This velocity difference rules out a thermal origin.
+
+
+%It is possible that a region within a few AU of the the central MYSO is heated
+%to such high temperatures.  To provide a high enough column density of CS
+%to exhibit the observed brightness, this region may have developed an
+%equilibrium between CS formation and destruction.
+
+\begin{figure*}
+    \includegraphics[]{figures/CS_maser_channel_maps.pdf}
+    \caption{Channel maps of the CS J=2-1 transition.  Channels are 3 \kms
+    wide.  Darker colors indicate higher intensity.  Contours are overlaid at
+    [0.02,0.04,0.06,0.08,0.1,0.125] Jy/beam.  Absorption is evident from 50-70
+    \kms.  The redshifted outflow is faint but still detected at
+    $\sim72.5\kms$.
+    }
+    \label{fig:channelmaps}
+\end{figure*}
+
+\section{Conclusions}
 
 \input{solobib}
 \end{document}
