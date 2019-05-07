@@ -1,25 +1,70 @@
 \documentclass[twocolumn]{aastex62}
 \input{preface}
+\newcommand{\nraojansky}{\affiliation{\it{Jansky fellow of the National Radio Astronomy Observatory, Socorro, NM 87801 USA }}}
 
 \begin{document}
-We report the discovery of maser emission in the two lowest transitions of CS.
+\title{CS masers in W51 e2e}
+\titlerunning{CS masers}
+\authorrunning{Ginsburg}
+
+\author[0000-0001-6431-9633]{Adam Ginsburg}
+\nraojansky
+
+
+\begin{abstract}
+We report the discovery of maser emission in the two lowest rotational transitions of CS.
+\end{abstract}
+
+\section{Introduction}
+
+Masers can be powerful tracers of gas motion on very small scales.
+They trace disks orbiting high-mass stars and black holes.
+
+The rotational transitions of CS have been theorized to mase
+in some environments \citep{Schoenberg1988a}, but they have
+never been observed as masers.
 
 \section{Observations}
-We report observations from three different observing programs....
+\label{sec:observations}
+We report observations from three different observing programs.
+ALMA 2013.1.01596.S \citep{Goddi2018a} observed band 6 (1 mm), 2017.1.00293.S
+observed Band 3 (3 mm), and VLA 16B-202 observed VLA Q-band (7 mm).
+The ALMA data were take in long-baseline configurations, and the VLA data
+were taken in the most extended A array.
 
-We measure an offset between the VLA and ALMA images using
-the \texttt{image-registration} toolkit to cross-correlate the images
-of e2.  The total measured offset is 0.029\arcsec, which is less than
-a beam in all of the data sets used here.  The pointing uncertainty should
-therefore be regarded as at least 0.029\arcsec.  We have corrected
-the VLA Q-band images to match the ALMA images, assuming the ALMA
-data have more reliable absolute positions.
+For the ALMA data, we use the pipeline-produced calibrated data for the
+emission line maps.  The Band 6 (1 mm) continuum data were self-calibrated
+as described in \citet{Goddi2018a}.  The VLA continuum data were calibrated
+with the EVLA pipeline with RFI flagging and hanning smoothing disabled.
+The continuum data were self-calibrated with 9 iterations of phase-only
+corrections.  The line cubes were made using the pipeline-calibrated data.
+
+We imaged the CS J=2-1 98 GHz line with robust 0.5 weighting with 3 \kms
+channels, resulting in a beam $0.067\arcsec\times0.043\arcsec$.  The CS J=1-0
+49 GHz line was included in a continuum band with 6 \kms resolution, and we
+imaged it with robust 0 weighting, resulting in a beam
+$0.043\arcsec\times0.037\arcsec$.
+
+We measure an offset between the VLA and ALMA images using the
+\texttt{image-registration} toolkit to cross-correlate the images of W51 e2w.
+W51 e2w is a bright, extended, highly structured HII region bright at all
+observed wavelengths and therefore provides a high target to cross-calibrate
+on.  The total measured offset is 0.029\arcsec, which is less than a beam in
+all of the data sets used here but much larger than the expected relative
+positional accuracy within the images.  The pointing uncertainty should
+therefore be regarded as at least 0.029\arcsec.  We have corrected the VLA
+Q-band images to match the ALMA images, assuming the ALMA data have more
+reliable absolute positions.
 
 \section{Results}
 We report the detection of two transitions of CS, J=2-1 and J=1-0, with
 peak brightness $T_{B,max}\approx6000$ K.
 These lines peak at different locations both spatially (Figure
 \ref{fig:overlay}) and spectrally (Figure \ref{fig:spectra}).
+We report Gaussian fit parameters to the line profiles and to the peak intensity
+images in Table \ref{tab:linepars}; the errors reported in the table are fit
+errors assuming no correlation between the parameters, and they do not include
+the systematic pointing accuracy problem noted in Section \ref{sec:observations}.
 
 The CS J=2-1 line is observed in the blueshifted component of the outflow.
 It has both a compact component, which we will refer to as the CS 2-1 maser,
@@ -52,12 +97,13 @@ marginally significant given the absolute positional offsets.
 \caption{Line Fit Parameters}
 \begin{tabular}{llllll}
     \label{tab:observations}
-Line Name & Amplitude & $v_{LSR}$ & $\sigma_{FWHM}$ & RA   & Dec \\
-          &         K &      \kms &            \kms & \deg & \deg \\
+Line Name & Amplitude & $v_{LSR}$ & $\sigma_{FWHM}$ & RA     & Dec \\
+          &         K &      \kms &            \kms & $\deg$ & $\deg$ \\
 \hline
 \input{linefit_table}
 \hline
 \end{tabular}
+\label{tab:linepars}
 \par
 Because of the coarse spectral resolution, the amplitude of the CS 1-0 line is
 poorly constrained, and we report its fitted width and centroid assuming a
@@ -111,6 +157,12 @@ This velocity difference rules out a thermal origin.
 \end{figure*}
 
 \section{Conclusions}
+We have detected two emission lines from the J=2-1 and J=1-0 transitions of CS
+with high brightness temperature indicating that these lines are masers.
+This is the first reported detection of maser emission from CS.
+
+\textbf{Acknowledgements}
+We thank Todd Hunter for providing literature references on CS masers.
 
 \input{solobib}
 \end{document}
