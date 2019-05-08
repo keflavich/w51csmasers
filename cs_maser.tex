@@ -44,6 +44,9 @@ channels, resulting in a beam $0.067\arcsec\times0.043\arcsec$.  The CS J=1-0
 49 GHz line was included in a continuum band with 6 \kms resolution, and we
 imaged it with robust 0 weighting, resulting in a beam
 $0.043\arcsec\times0.037\arcsec$.
+The SiO J=5-4 and J=2-1 lines and band 6 (1 mm) continuum were imaged with
+robust 0.5 weighting.
+
 
 We measure an offset between the VLA and ALMA images using the
 \texttt{image-registration} toolkit to cross-correlate the images of W51 e2w.
@@ -140,6 +143,11 @@ by about 150 AU), and therefore they are not emitted by the same material.
 This velocity difference rules out a thermal origin.
 
 
+Our data also include the W51 IRS2/north and W51e8 HMYSOs \citep{Ginsburg2017a}.
+No compact CS emission sources were detected toward any other HMYSO candidates
+in the region, with a peak CS 2-1 flux limit ${S_{98 \mathrm{GHz}} \leq 15 \mathrm{mJy~\perbeam}}$,
+an order of magnitude fainter than the peaks seen in W51e2e.
+
 %It is possible that a region within a few AU of the the central MYSO is heated
 %to such high temperatures.  To provide a high enough column density of CS
 %to exhibit the observed brightness, this region may have developed an
@@ -163,6 +171,24 @@ This is the first reported detection of maser emission from CS.
 
 \textbf{Acknowledgements}
 We thank Todd Hunter for providing literature references on CS masers.
+
+\appendix{Velocity check}
+We carefully checked the velocity measurements in the VLA data, since
+an offset of a few channels is comparable to the Earth's motion
+and we are using a continuum band to infer velocity information.
+The observations we analyze were take on December 26 and 30, 2016
+and January 7, 2017.  On these dates, the topocentric-to-barycentric
+velocity correction is -9.0, -7.4, and -4.1 \kms, respectively.
+The barycentric-to-LSR correction is 16.5 \kms.
+The observed CS 1-0 peak is in channel 24 (zero-indexed) of
+spectral window 26, which has channel 0 at  48957.667, 48957.932, and 48958.478
+MHz, respectively.  The channel width is 1 MHz.  The LSR velocity of this
+channel is at 64.3 \kms on all three dates.  This value is consistent
+with our reported velocity of $65.5 \pm 7.3 \kms$.
+
+No such sanity check is needed for the ALMA data, since the channel maps clearly
+show the outflow at appropriate velocities with morphology that matches the SiO
+outflow seen at both 1 mm and 3mm.
 
 \input{solobib}
 \end{document}
