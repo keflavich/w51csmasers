@@ -47,17 +47,29 @@ $0.043\arcsec\times0.037\arcsec$.
 The SiO J=5-4 and J=2-1 lines and band 6 (1 mm) continuum were imaged with
 robust 0.5 weighting.
 
+The VLA and ALMA data used the same phase calibrator, J1922+1530, with coordinates
+that differ by 0.003 \arcsec mostly in RA, which sets a lower limit on our systematic
+pointing error.  Both the VLA and ALMA positions are offset from the SIMBAD
+position by about 0.0015 \arcsec.  The VLA measurement set data incorrectly
+report the stored coordinate for J1922+1530 as being in the FK5 system, while
+the ALMA measurement sets correctly report the stored coordinate as being in ICRS.
+The difference between the ICRS and FK5 system is about 0.03\arcsec, close to the
+beam size, and therefore is highly relevant for these data.
+% VLA:
+%   1    NONE J1922+1530          19:22:34.699188 +15.30.10.03213 J2000   1       14747525
+% ALMA:
+%    2    none J1922+1530          19:22:34.699385 +15.30.10.03177 ICRS    2       16900560
 
-We measure an offset between the VLA and ALMA images using the
-\texttt{image-registration} toolkit to cross-correlate the images of W51 e2w.
-W51 e2w is a bright, extended, highly structured HII region bright at all
-observed wavelengths and therefore provides a high target to cross-calibrate
-on.  The total measured offset is 0.029\arcsec, which is less than a beam in
-all of the data sets used here but much larger than the expected relative
-positional accuracy within the images.  The pointing uncertainty should
-therefore be regarded as at least 0.029\arcsec.  We have corrected the VLA
-Q-band images to match the ALMA images, assuming the ALMA data have more
-reliable absolute positions.
+% We measure an offset between the VLA and ALMA images using the
+% \texttt{image-registration} toolkit to cross-correlate the images of W51 e2w.
+% W51 e2w is a bright, extended, highly structured HII region bright at all
+% observed wavelengths and therefore provides a high target to cross-calibrate
+% on.  The total measured offset is 0.029\arcsec, which is less than a beam in
+% all of the data sets used here but much larger than the expected relative
+% positional accuracy within the images.  The pointing uncertainty should
+% therefore be regarded as at least 0.029\arcsec.  We have corrected the VLA
+% Q-band images to match the ALMA images, assuming the ALMA data have more
+% reliable absolute positions.
 
 \section{Results}
 We report the detection of two transitions of CS, J=2-1 and J=1-0, with
