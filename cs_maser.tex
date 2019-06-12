@@ -12,21 +12,35 @@
 
 
 \begin{abstract}
-We report the discovery of maser emission in the two lowest rotational transitions of CS.
+We report the discovery of maser emission in the two lowest rotational
+transitions of CS toward the high-mass protostar W51 e2e with ALMA and the
+JVLA.  The masers from CS J=1-0 and J=2-1 are neither spatially nor spectrally
+coincident (they are separated by $\sim150$ AU and $\sim30$ \kms), but both
+appear to come from the base of the blueshifted outflow from this source.
 \end{abstract}
 
 \section{Introduction}
 
 Masers can be powerful tracers of gas motion on very small scales.
-They trace disks orbiting high-mass stars and black holes.
+They have been observed to trace disks orbiting high-mass stars and black
+holes, in outflow shocks, and in low-velocity shocks in the ISM.
 
 The rotational transitions of CS have been theorized to mase
 in some environments \citep{Schoenberg1988a}, but they have
-never been observed as masers.
+never previously been observed as masers.  \citet{Schoenberg1988a}
+used an expanding shell model in which temperature, density, and
+velocity are all decreasing with radius corresponding to some
+mass loss rate and terminal wind velocity. They predict masing
+in the CS 1-0 and 2-1 lines under different conditions, though the
+masing is fairly weak (factors of a few).  In these models,
+the stellar infrared radiation drives the maser.
+
+We report the first detection of maser emission from CS in both
+the J=1-0 and J=2-1 transitions.
 
 \section{Observations}
 \label{sec:observations}
-We report observations from three different observing programs.
+We report observations from three different observing programs:
 ALMA 2013.1.01596.S \citep{Goddi2018a} observed band 6 (1 mm), 2017.1.00293.S
 observed Band 3 (3 mm), and VLA 16B-202 observed VLA Q-band (7 mm).
 The ALMA data were take in long-baseline configurations, and the VLA data
@@ -48,19 +62,22 @@ The SiO J=5-4 and J=2-1 lines and band 6 (1 mm) continuum were imaged with
 robust 0.5 weighting.
 
 The VLA and ALMA data used the same phase calibrator, J1922+1530, with coordinates
-that differ by 0.003 \arcsec mostly in RA, which sets a lower limit on our systematic
-pointing error.  Both the VLA and ALMA positions are offset from the SIMBAD
-position by about 0.0015 \arcsec.  The VLA measurement set data incorrectly
-report the stored coordinate for J1922+1530 as being in the FK5 system, while
-the ALMA measurement sets correctly report the stored coordinate as being in ICRS.
-The difference between the ICRS and FK5 system is about 0.03\arcsec at this
-position, close to the beam size, and therefore is highly relevant for these
-data.
+that differ by 0.003\arcsec mostly in RA.  Both the VLA and ALMA positions are
+offset from the SIMBAD position by about 0.0015 \arcsec.  The VLA measurement
+set data incorrectly report the stored coordinate for J1922+1530 as being in
+the FK5 system, while the ALMA measurement sets correctly report the stored
+coordinate as being in ICRS.  The difference between the ICRS and FK5 system is
+about 0.03\arcsec at this position, close to the beam size, and therefore is
+highly relevant for these data.  We corrected the images for the coordinate system
+offset (0.03\arcsec), but did not correct for the $\approx0.003\arcsec$ discrepancy in
+calibrator position, so our systematic pointing error is approximately
+0.003\arcsec (16 AU).
 % VLA:
 %   1    NONE J1922+1530          19:22:34.699188 +15.30.10.03213 J2000   1       14747525
 % ALMA:
 %    2    none J1922+1530          19:22:34.699385 +15.30.10.03177 ICRS    2       16900560
 
+%NOPE! no pointing offset afeter all.
 % We measure an offset between the VLA and ALMA images using the
 % \texttt{image-registration} toolkit to cross-correlate the images of W51 e2w.
 % W51 e2w is a bright, extended, highly structured HII region bright at all
@@ -82,7 +99,8 @@ images in Table \ref{tab:linepars}; the errors reported in the table are fit
 errors assuming no correlation between the parameters, and they do not include
 the systematic pointing accuracy problem noted in Section \ref{sec:observations}.
 
-The CS J=2-1 line is observed in the blueshifted component of the outflow.
+The CS J=2-1 line is observed in the blueshifted component of the
+previously-detected SiO outflow \citep{Goddi2018a}.
 It has both a compact component, which we will refer to as the CS 2-1 maser,
 and an extended component that traces the inner envelope of the blueshifted
 outflow.  This extended component can be seen more clearly in the 42 \kms
@@ -105,8 +123,8 @@ peak is located at the base of the blueshifted outflow (Figure
 The CS J=1-0 line is only seen as a single spatial component centered
 at approximately $v_{lsr}=64 \pm 6$ \kms.  It is centered closer to the
 central continuum source, but still slightly toward the blueshifted outflow.
-The CS J=1-0 and J=2-1 masers are offset by 0.03\arcsec (150 AU), which is
-marginally significant given the absolute positional offsets.
+The CS J=1-0 and J=2-1 masers are offset by $0.036\arcsec \pm 0.12$\arcsec
+($190\pm60$ AU).
 
 \begin{table*}[htp]
 \centering
@@ -141,7 +159,8 @@ The peak brightness of the observed lines is $\sim6800$ K at $\sim0.07\arcsec$
 (350 AU at 3 mm) and $\sim0.04\arcsec$ (200 AU at 7 mm) resolution.  It is unlikely that the
 molecules are in thermal equilibrium at $T_K \geq 6000$ K, since such high
 temperatures would more likely result in dissociation of the molecules
-\citep{Black?}.
+\citep[e.g.,][]{Pattillo2018a}.
+%TODO: check that it would actually dissociate
 
 At the observed spectral resolution of 3 \kms and 6 \kms, the CS J=2-1 line is
 marginally resolved with FWHM=5.25 \kms and the CS J=1-0 line is unresolved.
@@ -150,10 +169,19 @@ much greater than the thermal width for CS at 6000 K, $v_{therm}\approx1~\kms$,
 we cannot conclude anything about the intrinsic line width.
 
 While both transitions have a consistent peak brightness of $\sim6800$ K,
-which is not typical of maser transitions, these emission peaks are at
-different velocities and may be from different spatial locations (separated
-by about 150 AU), and therefore they are not emitted by the same material.
+which is below that typical of maser transitions in other molecules, these
+emission peaks are at different velocities and may be from different spatial
+locations (separated
+by about 190 AU), and therefore they are not emitted by the same material.
 This velocity difference rules out a thermal origin.
+
+If we assume the masers trace orbiting material, their velocity and spatial
+separation can be used to infer the central source mass.  At a separation of 30
+\kms and 190 AU, assuming the masers come from opposite ends of a disk such
+that $v_{orb}=15\pm1$~\kms and $R_{disk}=95\pm30$~AU, the implied contained mass is
+$M=24_{-10}^{+12}$~\msun.  While these assumptions are not particularly
+justified, the mass is of order that suggested by \citet{Ginsburg2017a} and
+\citet{Goddi2018a} based on luminosity estimates.
 
 
 Our data also include the W51 IRS2/north and W51e8 HMYSOs
@@ -174,8 +202,9 @@ blueshifted outflow lobe of W51e2e.
     \includegraphics[]{figures/CS_maser_channel_maps.pdf}
     \caption{Channel maps of the CS J=2-1 transition.  Channels are 3 \kms
     wide.  Darker colors indicate higher intensity.  Contours are overlaid at
-    [0.02,0.04,0.06,0.08,0.1,0.125] Jy/beam.  Absorption is evident from 50-70
-    \kms.  The redshifted outflow is faint but still detected at
+    [0.02,0.04,0.06,0.08,0.1,0.125] Jy/beam.  Absorption against the continuum
+    is evident from 50-70 \kms.  The redshifted outflow is faint but still
+    detected at
     $\sim72.5\kms$.
     }
     \label{fig:channelmaps}
@@ -199,28 +228,29 @@ each of these masers.  Other HMYSOs should be searched for masers in these
 transitions to determine how common they are.
 
 \textbf{Acknowledgements}
-We thank Todd Hunter for providing literature references on CS masers.
+I thank Todd Hunter for providing literature references on CS masers and Lorant
+Sjouwerman for discussion about a lack of CS masers in AGB stars.
 
-\appendix{Velocity check}
-We carefully checked the velocity measurements in the VLA data, since
-an offset of a few channels is comparable to the Earth's motion
-and we are using a continuum band to infer velocity information.
-The observations we analyze were take on December 26 and 30, 2016
-and January 7, 2017.  On these dates, the topocentric-to-barycentric
-velocity correction is -9.0, -7.4, and -4.1 \kms, respectively.
-The barycentric-to-LSR correction is 16.5 \kms.
-The observed CS 1-0 peak is in channel 24 (zero-indexed) of
-spectral window 26, which has channel 0 at  48957.667, 48957.932, and 48958.478
-MHz, respectively.  The channel width is 1 MHz.  The LSR velocity of this
-channel is at 64.3 \kms on all three dates.  This value is consistent
-with our reported velocity of $65.5 \pm 7.3 \kms$.
+\appendix
+\section{Velocity check}
+We carefully checked the velocity measurements in the VLA data, since an offset
+of a few channels is comparable to the Earth's motion and we are using a
+continuum band to infer velocity information.  The observations we analyze were
+take on December 26 and 30, 2016 and January 7, 2017.  On these dates, the
+topocentric-to-barycentric velocity correction is -9.0, -7.4, and -4.1 \kms,
+respectively.  The barycentric-to-LSR correction is 16.5 \kms.  The observed CS
+1-0 peak is in channel 24 (zero-indexed) of spectral window 26, which has
+channel 0 at  48957.667, 48957.932, and 48958.478 MHz, respectively, for each
+of the three observations.  The channel width is 1 MHz.  The LSR velocity of
+this channel is at 64.3 \kms on all three dates.  This value is consistent with
+our reported velocity of $v_{LSR}(\mathrm{CS~J=}1-0) = 65.5 \pm 0.7 \kms$.
 
 No such sanity check is needed for the ALMA data, since the channel maps clearly
 show the outflow at appropriate velocities with morphology that matches the SiO
 outflow seen at both 1 mm and 3mm.
 
-\appendix{Variability check}
-We also checked for variability, and found no evidence for variability
+\section{Variability check}
+We also checked for variability in the CS 1-0 maser, and found no evidence for variability
 across four observing epochs (2016-10-02, 2016-12-26, 2016-12-30, 2017-01-07; the
 former was not included in our merged data set because of bad calibration).
 The position remained constant and the flux remained consistent to within single-epoch
