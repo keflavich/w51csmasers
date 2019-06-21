@@ -3,12 +3,13 @@
 \newcommand{\nraojansky}{\affiliation{\it{Jansky fellow of the National Radio Astronomy Observatory, Socorro, NM 87801 USA }}}
 
 \begin{document}
-\title{CS masers in W51 e2e}
+\title{First detection of CS masers around a high-mass young stellar object, W51 e2e}
 \titlerunning{CS masers}
 \authorrunning{Ginsburg}
 
 \author[0000-0001-6431-9633]{Adam Ginsburg}
 \nraojansky
+\author[]{Ciriaco Goddi}
 
 
 \begin{abstract}
@@ -41,9 +42,9 @@ the J=1-0 and J=2-1 transitions.
 \section{Observations}
 \label{sec:observations}
 We report observations from three different observing programs:
-ALMA 2013.1.01596.S \citep{Goddi2018a} observed band 6 (1 mm), 2017.1.00293.S
-observed Band 3 (3 mm), and VLA 16B-202 observed VLA Q-band (7 mm).
-The ALMA data were take in long-baseline configurations, and the VLA data
+ALMA 2013.1.01596.S \citep{Goddi2018a} observed band 6 (1 mm, SiO), 2017.1.00293.S
+observed Band 3 (3 mm, CS 2-1), and VLA 16B-202 observed VLA Q-band (7 mm, CS 1-0).
+The ALMA data were taken in long-baseline configurations, and the VLA data
 were taken in the most extended A array.
 
 For the ALMA data, we use the pipeline-produced calibrated data for the
@@ -54,12 +55,13 @@ The continuum data were self-calibrated with 9 iterations of phase-only
 corrections.  The line cubes were made using the pipeline-calibrated data.
 
 We imaged the CS J=2-1 98 GHz line with robust 0.5 weighting with 3 \kms
-channels, resulting in a beam $0.067\arcsec\times0.043\arcsec$.  The CS J=1-0
+channels, resulting in a beam $0.067\arcsec\times0.043\arcsec$, PA=$-44.5^\circ$.  The CS J=1-0
 49 GHz line was included in a continuum band with 6 \kms resolution, and we
 imaged it with robust 0 weighting, resulting in a beam
-$0.043\arcsec\times0.037\arcsec$.
+$0.043\arcsec\times0.037\arcsec$, PA=$-64.8^\circ$.
 The SiO J=5-4 and J=2-1 lines and band 6 (1 mm) continuum were imaged with
-robust 0.5 weighting.
+robust 0.5 weighting with beam sizes $0.041\arcsec\times0.035\arcsec$, PA=-44.8$^\circ$ and $0.079\arcsec\times0.053\arcsec$, PA=-42.8$^\circ$,
+respectively.
 
 The VLA and ALMA data used the same phase calibrator, J1922+1530, with coordinates
 that differ by 0.003\arcsec mostly in RA.  Both the VLA and ALMA positions are
@@ -108,15 +110,17 @@ channel of the channel maps (Figure \ref{fig:channelmaps}).  The maser
 peak is located at the base of the blueshifted outflow (Figure
 \ref{fig:overlay}) at a velocity of $v_{lsr}=34.50\pm0.07$ \kms.
 
+% sio_and_cs_overlays.py
 \begin{figure*}[htp]
     \includegraphics[width=\textwidth]{figures/W51e2e_sio_outflow_with_CS_contours.pdf}
     \caption{An image of the SiO 5-4 outflow (red and blue corresponding to
     red and blueshifted emission integrated over 74-118 \kms and -32 to 55
     \kms, respectively) with continuum shown in green.  The contours show SiO
     2-1 in red (0.05, 0.1 K \kms) and blue (0.1, 0.2 K \kms), the CS 2-1
-    maser in white (0.1, 0.2, 0.5, 0.8 K \kms integrated over -32 to 55 \kms),
+    maser in white (2000, 4000, 6000 peak intensity over -32 to 55 \kms),
     and the CS 1-0 maser in black (2000, 4000, 8000 K peak intensity over
-    the range 55-74 \kms).  }
+    the range 55-74 \kms).  For both the masers, the contours effectively
+    indicate the beam size.}
     \label{fig:overlay}
 \end{figure*}
 
@@ -173,7 +177,9 @@ which is below that typical of maser transitions in other molecules, these
 emission peaks are at different velocities and may be from different spatial
 locations (separated
 by about 190 AU), and therefore they are not emitted by the same material.
-This velocity difference rules out a thermal origin.
+This velocity difference rules out a thermal origin for either transition,
+since thermal lines should have comparable brightness in both transitions
+at similar velocities.
 
 If we assume the masers trace orbiting material, their velocity and spatial
 separation can be used to infer the central source mass.  At a separation of 30
@@ -182,6 +188,9 @@ that $v_{orb}=15\pm1$~\kms and $R_{disk}=95\pm30$~AU, the implied contained mass
 $M=24_{-10}^{+12}$~\msun.  While these assumptions are not particularly
 justified, the mass is of order that suggested by \citet{Ginsburg2017a} and
 \citet{Goddi2018a} based on luminosity estimates.
+However, the velocity separation also hints that these masers may be produced
+in the outflow rather than in a disk.  In that case, the orbital analysis
+is not valid.
 
 
 Our data also include the W51 IRS2/north and W51e8 HMYSOs
@@ -191,7 +200,7 @@ ${S_{98 \mathrm{GHz}} \leq 15 \mathrm{mJy~\perbeam}}$, an order of magnitude
 fainter than the peaks seen in W51e2e.  However, plentiful extended CS 2-1
 emission is seen around each of the HMYSOs.  This difference indicates that
 there is something unique about the chemistry, geometry, or excitation in the
-blueshifted outflow lobe of W51e2e.
+W51e2e that drives these particular maser transitions.
 
 %It is possible that a region within a few AU of the the central MYSO is heated
 %to such high temperatures.  To provide a high enough column density of CS
@@ -224,8 +233,9 @@ promotes CS maser formation.
 These CS masers join a growing list of rarely-detected maser transitions
 that may trace a unique phase in the formation of high-mass protostars.
 Like the NH$_3$, H$_2$CO, and SiO masers, there are only 1-10 known sources of
-each of these masers.  Other HMYSOs should be searched for masers in these
-transitions to determine how common they are.
+each of these masers.  Curiously, W51 North, a known host of NH$_3$ and SiO masers,
+does not exhibit any CS maser emission.  Other HMYSOs should be searched for
+masers in these transitions to determine how common they are.
 
 \textbf{Acknowledgements}
 I thank Todd Hunter for providing literature references on CS masers and Lorant
