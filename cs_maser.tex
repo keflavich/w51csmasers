@@ -1,6 +1,8 @@
 \documentclass[twocolumn]{aastex62}
 \input{preface}
 \newcommand{\nraojansky}{\affiliation{\it{Jansky fellow of the National Radio Astronomy Observatory, Socorro, NM 87801 USA }}}
+\newcommand{\radboud}{\affiliation{\it{Department of Astrophysics/IMAPP, Radboud University Nijmegen, PO Box 9010, 6500 GL Nijmegen, the Netherlands}}}
+\newcommand{\allegro}{\affiliation{\it{ALLEGRO/Leiden Observatory, Leiden University, PO Box 9513, 2300 RA Leiden, the Netherlands}}}
 
 \begin{document}
 \title{First detection of CS masers around a high-mass young stellar object, W51 e2e}
@@ -10,6 +12,8 @@
 \author[0000-0001-6431-9633]{Adam Ginsburg}
 \nraojansky
 \author{Ciriaco Goddi}
+\allegro
+\radboud
 
 
 \begin{abstract}
@@ -26,7 +30,7 @@ appear to come from the base of the blueshifted outflow from this source.
 %been observed to trace disks orbiting high-mass stars and black holes, in
 %outflow shocks, and in low-velocity shocks in the ISM.
 
-Because of their compactness, high brightness, and ubiquity, masers have are
+Because of their compactness, high brightness, and ubiquity, masers are
 unique diagnostic probes of the early-stages of HMSF.  Early single-dish
 surveys in the Galaxy detected the brightest maser lines of methanol, water, and hydroxyl,
 revealing that certain transitions of these molecules are unique signposts of high-mass
@@ -38,7 +42,7 @@ in the circumstellar enviroments of high-mass protostars.
 While some chemical species, specifically \methanol, \water, and OH, are detected in hundreds
 of star-forming regions across the Galaxy, others are more rare, such as SiO
 (around young stars; SiO masers are common in evolved stars), H$_2$CO, and
-NH$_3$ \citep[e.g.,]{Cho2016a,Ginsburg2015a,Mills2018b}.  The rarity of these
+NH$_3$ \citep[e.g.,][]{Cho2016a,Ginsburg2015a,Mills2018b}.  The rarity of these
 masers is so far unexplained, though there is presumably something unique about
 the physical conditions producing them.  The conditions required to produce
 a maser are some combination of gas temperature and density, molecular abundance,
@@ -126,7 +130,7 @@ Among the known HMSFRs exhibiting maser emission, W51 IRS2 stands out.  It
 powers a large number ($>$ 20) of rare \ammonia maser lines as well as the rare SiO
 masers \citep{Henkel2013a,Hasegawa1986a,Eisner2002a}.  W51-e2e, on the other
 hand, is a more typical high-mass star-forming region in terms of its masers,
-exhibiting only \methanol, \water, and OH \citep{Goddi?}.
+exhibiting only \methanol, \water, and OH \citep{Goddi2016a}.
 We report here  the first detection of maser emission from CS $v=0$ in both
 the J=1-0 and J=2-1 transitions in W51-e2e.
 
@@ -144,14 +148,17 @@ For the ALMA data, we use the pipeline-produced calibrated data for the
 emission line maps.  The Band 6 (1 mm) continuum data were self-calibrated
 as described in \citet{Goddi2018a}.  The VLA continuum data were calibrated
 with the EVLA pipeline with RFI flagging and hanning smoothing disabled.
-The continuum data were self-calibrated with 9 iterations of phase-only
-corrections.  The line cubes were made using the pipeline-calibrated data.
+The ALMA 1 mm continuum data were self-calibrated with 9 iterations of
+phase-only corrections.  The line cubes were made using the pipeline-calibrated
+data.
 
 We imaged the CS J=2-1 98 GHz line with robust 0.5 weighting with 3 \kms
 channels, resulting in a beam $0.067\arcsec\times0.043\arcsec$, PA=$-44.5^\circ$.  The CS J=1-0
 49 GHz line was included in a continuum band with 6 \kms resolution, and we
 imaged it with robust 0 weighting, resulting in a beam
-$0.043\arcsec\times0.037\arcsec$, PA=$-64.8^\circ$.
+$0.043\arcsec\times0.037\arcsec$, PA=$-64.8^\circ$.  We also imaged the CS v=1 J=1-0 line
+at the same resolution with a sensitivity of $\sigma_{rms} \approx 1.1$ mJy \perbeam,
+but did not detect it.
 The SiO J=5-4 and J=2-1 lines and band 6 (1 mm) continuum were imaged with
 robust 0.5 weighting with beam sizes $0.041\arcsec\times0.035\arcsec$, PA=-44.8$^\circ$ and $0.079\arcsec\times0.053\arcsec$, PA=-42.8$^\circ$,
 respectively.
@@ -278,9 +285,8 @@ If we assume the masers trace orbiting material, their velocity and spatial
 separation can be used to infer the central source mass.  At a separation of 30
 \kms and 190 AU, assuming the masers come from opposite ends of a disk such
 that $v_{orb}=15\pm1$~\kms and $R_{disk}=95\pm30$~AU, the implied contained mass is
-$M=24_{-10}^{+12}$~\msun.  While these assumptions are not particularly
-justified, the mass is of order that suggested by \citet{Ginsburg2017a} and
-\citet{Goddi2018a} based on luminosity estimates.
+$M=24_{-10}^{+12}$~\msun.  This mass is of order that suggested by
+\citet{Ginsburg2017a} and \citet{Goddi2018a} based on luminosity estimates.
 However, the velocity separation also hints that these masers may be produced
 in the outflow rather than in a disk.  In that case, the orbital analysis
 is not valid.
@@ -295,6 +301,15 @@ emission is seen around each of the HMYSOs.  This difference indicates that
 there is something unique about the chemistry, geometry, or excitation in the
 W51e2e that drives these particular maser transitions.
 
+The detection of CS 1-0 emission at $\sim65$ \kms is actually quite surprising,
+since W51e2e is deeply embedded in a high column density molecular medium that
+covers this velocity.  Since the maser is detected, there must either be a hole
+through which we are seeing the compact emission, or the CS is highly excited
+and has a minimal ground-state population at 65 \kms; the latter explanation is
+more likely.  The J=2-1 transition at 34.5 \kms is not subject to this concern,
+since there is no foreground material at that velocity, but it is possible that
+a 2-1 maser exists near 65 \kms and is fully absorbed by foreground cloud.
+
 %It is possible that a region within a few AU of the the central MYSO is heated
 %to such high temperatures.  To provide a high enough column density of CS
 %to exhibit the observed brightness, this region may have developed an
@@ -305,7 +320,7 @@ W51e2e that drives these particular maser transitions.
     \caption{Channel maps of the CS J=2-1 transition.  Channels are 3 \kms
     wide.  Darker colors indicate higher intensity.  Contours are overlaid at
     [0.02,0.04,0.06,0.08,0.1,0.125] Jy/beam.  Absorption against the continuum
-    is evident from 50-70 \kms.  The redshifted outflow is faint but still
+    is evident in white from 50-70 \kms.  The redshifted outflow is faint but still
     detected at
     $\sim72.5\kms$.
     }
@@ -331,8 +346,13 @@ does not exhibit any CS maser emission.  Other HMYSOs should be searched for
 masers in these transitions to determine how common they are.
 
 \textbf{Acknowledgements}
-I thank Todd Hunter for providing literature references on CS masers and Lorant
-Sjouwerman for discussion about a lack of CS masers in AGB stars.
+We thank Todd Hunter for providing literature references on CS masers and
+Lorant Sjouwerman for discussion about a lack of CS masers in AGB stars.
+
+\textbf{Software}
+This paper used \texttt{astropy}
+\citep{Astropy-Collaboration2013a,Astropy-Collaboration2018a},
+\texttt{pyspeckit} \citep{Ginsburg2011c}, and CASA \citep{McMullin2007a}.
 
 \appendix
 \section{Velocity check}
