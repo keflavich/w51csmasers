@@ -1,5 +1,6 @@
 \documentclass[twocolumn]{aastex62}
 \input{preface}
+\newcommand{\florida}{\affiliation{\it{Department of Astronomy, University of Florida, PO Box 112055, USA}}}
 \newcommand{\nraojansky}{\affiliation{\it{Jansky fellow of the National Radio Astronomy Observatory, Socorro, NM 87801 USA }}}
 \newcommand{\radboud}{\affiliation{\it{Department of Astrophysics/IMAPP, Radboud University Nijmegen, PO Box 9010, 6500 GL Nijmegen, the Netherlands}}}
 \newcommand{\allegro}{\affiliation{\it{ALLEGRO/Leiden Observatory, Leiden University, PO Box 9513, 2300 RA Leiden, the Netherlands}}}
@@ -10,6 +11,7 @@
 \authorrunning{Ginsburg}
 
 \author[0000-0001-6431-9633]{Adam Ginsburg}
+\florida
 \nraojansky
 \author{Ciriaco Goddi}
 \allegro
@@ -31,25 +33,26 @@ appear to come from the base of the blueshifted outflow from this source.
 %outflow shocks, and in low-velocity shocks in the ISM.
 
 Because of their compactness, high brightness, and ubiquity, masers are
-unique diagnostic probes of the early-stages of HMSF.  Early single-dish
-surveys in the Galaxy detected the brightest maser lines of methanol, water, and hydroxyl,
-revealing that certain transitions of these molecules are unique signposts of high-mass
+unique diagnostic probes of the early stages of star formation.
+Early single-dish surveys in the Galaxy detected the brightest maser lines of
+methanol, water, and hydroxyl, revealing that certain transitions of these
+molecules are signposts of 
 star formation \citep[e.g.,][]{Menten1991a,Caswell1995a}.
-Long baseline interferometric studies \citep[e.g.,][]{Goddi2011a,Moscadelli2014a,Matthews2010a}
-have revealed that these lines can trace accretion structures, shocks in outflows, and disk winds
-in the circumstellar enviroments of high-mass protostars.
+Long baseline interferometric studies
+\citep[e.g.,][]{Goddi2011a,Moscadelli2014a,Matthews2010a} have revealed that
+these lines can trace accretion structures, shocks in outflows, and disk winds
+in the circumstellar enviroments of protostars.
 
-While some chemical species, specifically \methanol, \water, and OH, are detected in hundreds
-of star-forming regions across the Galaxy, others are more rare, such as SiO
-(around young stars; SiO masers are common in evolved stars), H$_2$CO, and
-NH$_3$ \citep[e.g.,][]{Cho2016a,Ginsburg2015a,Mills2018b}.  The rarity of these
-masers is so far unexplained, though there is presumably something unique about
-the physical conditions producing them.  The conditions required to produce
-a maser are some combination of gas temperature and density, molecular abundance,
-and local radiation field.
-Observations of new maser species may help reveal the properties of the
-illuminating source or the accreting medium if models of their maser
-configuration can be developed.
+While some chemical species, specifically \methanol, \water, and OH, are
+detected in hundreds of star-forming regions across the Galaxy, others are more
+rare, such as SiO (around young stars; SiO masers are common in evolved stars),
+H$_2$CO, and NH$_3$ \citep[e.g.,][]{Cho2016a,Ginsburg2015a,Mills2018b}.  The
+rarity of these masers is so far unexplained, though there is presumably
+something unique about the physical conditions producing them.  The conditions
+required to produce a maser are some combination of gas temperature and
+density, molecular abundance, and local radiation field.  Observations of new
+maser species may help reveal the properties of the illuminating source or the
+accreting medium if models of their maser configuration can be developed.
 
 % {\color{blue} 
 % From earlier single-dish surveys of molecular masers in
@@ -144,23 +147,25 @@ observed Band 3 (3 mm, CS J=2-1), and VLA 16B-202 observed VLA Q-band (7 mm, CS 
 The ALMA data were taken in long-baseline configurations, and the VLA data
 were taken in the most extended A array.
 
-For the ALMA data, we use the pipeline-produced calibrated data for the
-emission line maps.  The Band 6 (1 mm) continuum data were self-calibrated
-as described in \citet{Goddi2018a}.  The VLA continuum data were calibrated
-with the EVLA pipeline with RFI flagging and hanning smoothing disabled.
-The ALMA 1 mm continuum data were self-calibrated with 9 iterations of
-phase-only corrections.  The line cubes were made using the pipeline-calibrated
-data.
+For the ALMA data, both at 1 mm and 3 mm, we use the pipeline-produced
+calibrated data for the emission line maps.  The Band 6 (1 mm) continuum data
+were self-calibrated as described in \citet{Goddi2018a}, using  nine iterations
+of phase-only self-calibration.  
+
+The VLA data were calibrated with the EVLA pipeline with RFI flagging
+and hanning smoothing disabled.
 
 We imaged the CS J=2-1 98 GHz line with robust 0.5 weighting with 3 \kms
-channels, resulting in a beam $0.067\arcsec\times0.043\arcsec$, PA=$-44.5^\circ$.  The CS J=1-0
+channels, resulting in a beam $0.067\arcsec\times0.043\arcsec$, PA=$-44.5^\circ$,
+and {\textcolor{red}{sensitivity XXX}}.  The CS J=1-0
 49 GHz line was included in a continuum band with 6 \kms resolution, and we
 imaged it with robust 0 weighting, resulting in a beam
-$0.043\arcsec\times0.037\arcsec$, PA=$-64.8^\circ$.  We also imaged the CS v=1 J=1-0 line
+$0.043\arcsec\times0.037\arcsec$, PA=$-64.8^\circ$ and {\textcolor{red}{sensitivity 1.1 mJy \perbeam}}.  We also imaged the CS v=1 J=1-0 line
 at the same resolution with a sensitivity of $\sigma_{rms} \approx 1.1$ mJy \perbeam,
 but did not detect it.
 The SiO J=5-4 and J=2-1 lines and band 6 (1 mm) continuum were imaged with
-robust 0.5 weighting with beam sizes $0.041\arcsec\times0.035\arcsec$, PA=-44.8$^\circ$ and $0.079\arcsec\times0.053\arcsec$, PA=-42.8$^\circ$,
+robust 0.5 weighting with beam sizes $0.041\arcsec\times0.035\arcsec$,
+PA=-44.8$^\circ$ and $0.079\arcsec\times0.053\arcsec$, PA=-42.8$^\circ$,
 respectively.
 
 The VLA and ALMA data used the same phase calibrator, J1922+1530, with coordinates
@@ -199,7 +204,7 @@ These lines peak at different locations both spatially (Figure
 We report Gaussian fit parameters to the line profiles and to the peak intensity
 images in Table \ref{tab:linepars}; the errors reported in the table are fit
 errors assuming no correlation between the parameters, and they do not include
-the systematic pointing accuracy problem noted in Section \ref{sec:observations}.
+the systematic pointing uncertainty noted in Section \ref{sec:observations}.
 
 The CS J=2-1 line is observed in the blueshifted component of the
 previously-detected SiO outflow \citep{Goddi2018a}.
@@ -266,11 +271,12 @@ temperatures would more likely result in dissociation of the molecules
 \citep[e.g.,][]{Pattillo2018a}.
 %TODO: check that it would actually dissociate
 
-At the observed spectral resolution of 3 \kms and 6 \kms, the CS J=2-1 line is
-marginally resolved with FWHM=5.25 \kms and the CS J=1-0 line is unresolved.
-Since the inferred line width and the observed spectral resolution are both
-much greater than the thermal width for CS at 6000 K, $v_{therm}\approx1~\kms$,
-we cannot conclude anything about the intrinsic line width.
+At the observed spectral resolution of 3 \kms, the CS J=2-1 line is marginally
+resolved with FWHM=5.25 \kms ($\sigma=2.2 \kms$), and at 6 \kms resolution, the
+CS J=1-0 line is unresolved.
+% The measured line width and the observed spectral resolution are both
+% much greater than the thermal width for CS at 6000 K, $v_{therm}\approx1~\kms$.
+%we cannot conclude anything about the intrinsic line width.
 
 While both transitions have a consistent peak brightness of $\sim6800$ K,
 which is below that typical of maser transitions in other molecules, these
@@ -294,21 +300,22 @@ is not valid.
 
 Our data also include the W51 IRS2/north and W51e8 HMYSOs
 \citep{Ginsburg2017a}.  No compact and bright CS emission sources were detected
-toward any other HMYSO candidates in the region, with a peak CS 2-1 flux limit
-${S_{98 \mathrm{GHz}} \leq 15 \mathrm{mJy~\perbeam}}$, an order of magnitude
-fainter than the peaks seen in W51e2e.  However, plentiful extended CS 2-1
-emission is seen around each of the HMYSOs.  This difference indicates that
-there is something unique about the chemistry, geometry, or excitation in the
-W51e2e that drives these particular maser transitions.
+toward either of these HMYSO candidates, with a peak CS 2-1 flux limit ${S_{98
+\mathrm{GHz}} \leq 15 \mathrm{mJy~\perbeam}}$, an order of magnitude fainter
+than the peaks seen in W51e2e.  However, plentiful extended CS 2-1 emission is
+seen around each of the HMYSOs.  This difference indicates that there is
+something unique about the chemistry, geometry, or excitation in the W51e2e
+that drives these particular maser transitions.
 
 The detection of CS 1-0 emission at $\sim65$ \kms is actually quite surprising,
 since W51e2e is deeply embedded in a high column density molecular medium that
 covers this velocity.  Since the maser is detected, there must either be a hole
-through which we are seeing the compact emission, or the CS is highly excited
-and has a minimal ground-state population at 65 \kms; the latter explanation is
-more likely.  The J=2-1 transition at 34.5 \kms is not subject to this concern,
-since there is no foreground material at that velocity, but it is possible that
-a 2-1 maser exists near 65 \kms and is fully absorbed by foreground cloud.
+through which we are seeing the compact emission, or the foreground cloud's CS
+is highly excited and has a minimal ground-state population at 65 \kms; the
+latter explanation is more likely.  The J=2-1 transition at 34.5 \kms is not
+subject to this concern, since there is no foreground material at that
+velocity, but it is possible that a 2-1 maser exists near 65 \kms and is fully
+absorbed by foreground cloud material.
 
 %It is possible that a region within a few AU of the the central MYSO is heated
 %to such high temperatures.  To provide a high enough column density of CS
@@ -331,7 +338,7 @@ a 2-1 maser exists near 65 \kms and is fully absorbed by foreground cloud.
 We have detected two emission lines from the J=2-1 and J=1-0 transitions of CS
 with high brightness temperature indicating that these lines are masers.
 This is the first reported detection of maser emission from CS.
-While the HMYSO W51e2e exhibits these masers, many neighboring HMYSOs that
+While the HMYSO W51e2e exhibits these masers, several neighboring HMYSOs that
 are similar in luminosity, core mass, and apparent evolutionary stage
 do not.  The presence of two CS masers from different rotational states
 at different velocities and locations in the source suggest that there is something
