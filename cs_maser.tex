@@ -34,25 +34,29 @@ appear to come from the base of the blueshifted outflow from this source.
 
 Because of their compactness, high brightness, and ubiquity, masers are
 unique diagnostic probes of the early stages of star formation.
-Early single-dish surveys in the Galaxy detected the brightest maser lines of
-methanol, water, and hydroxyl, revealing that certain transitions of these
-molecules are signposts of 
-star formation \citep[e.g.,][]{Menten1991a,Caswell1995a}.
+% Single-dish surveys in the Galaxy detected the brightest maser lines of
+% methanol, water, and hydroxyl, revealing that certain transitions of these
+% molecules are signposts of 
+% star formation \citep[e.g.,][]{Menten1991a,Caswell1995a}.
 Long baseline interferometric studies
 \citep[e.g.,][]{Goddi2011a,Moscadelli2014a,Matthews2010a} have revealed that
-these lines can trace accretion structures, shocks in outflows, and disk winds
-in the circumstellar enviroments of protostars.
+maser emission lines can trace accretion structures, shocks in outflows, and
+disk winds in the circumstellar enviroments of protostars.
 
 While some chemical species, specifically \methanol, \water, and OH, are
 detected in hundreds of star-forming regions across the Galaxy, others are more
 rare, such as SiO (around young stars; SiO masers are common in evolved stars),
 H$_2$CO, and NH$_3$ \citep[e.g.,][]{Cho2016a,Ginsburg2015a,Mills2018b}.  The
-rarity of these masers is so far unexplained, though there is presumably
-something unique about the physical conditions producing them.  The conditions
-required to produce a maser are some combination of gas temperature and
-density, molecular abundance, and local radiation field.  Observations of new
-maser species may help reveal the properties of the illuminating source or the
-accreting medium if models of their maser configuration can be developed.
+rarity of this latter group of masers is so far unexplained, though since they
+have only been detected toward high-mass star-forming regions
+\citep{Araya2015a,Wilson1993a,Hoffner1994a,Cordiner2016a}, they are likely to
+be pumped by the strong radiation only present around high-mass protostars.
+
+%The conditions
+%required to produce a maser are some combination of gas temperature and
+%density, molecular abundance, and local radiation field.  Observations of new
+%maser species may help reveal the properties of the illuminating source or the
+%accreting medium if models of their maser configuration can be developed.
 
 % {\color{blue} 
 % From earlier single-dish surveys of molecular masers in
@@ -121,21 +125,31 @@ never previously been observed as masers in their ground state
 (\citealt{Highberger2000a} reported a possible maser from the CS v=1 J=3-2
 transition in IRC+10216).
 \citet{Schoenberg1988a}
-used an expanding shell model in which temperature, density, and
-velocity are all decreasing with radius corresponding to some
-mass loss rate and terminal wind velocity. They predict masing
-in the CS J=1-0 and J=2-1 lines under different conditions, though the
-masing is fairly weak (factors of a few).  In these models,
-the stellar infrared radiation drives the maser.
+used an expanding shell model appropriate to evolved stars in which
+temperature, density, and velocity are all decreasing with radius corresponding
+to some mass loss rate and terminal wind velocity. They predict masing in the
+CS J=1-0 and J=2-1 lines under different conditions, though the masing is
+fairly weak (factors of a few).  In these models, the stellar infrared
+radiation drives the maser.  The similarity between the atmospheres
+of evolved stars and the innermost regions around accreting high-mass stars
+hints that these maser models may apply in both environments.
 
 
-Among the known HMSFRs exhibiting maser emission, W51 IRS2 stands out.  It
-powers a large number ($>$ 20) of rare \ammonia maser lines as well as the rare SiO
-masers \citep{Henkel2013a,Hasegawa1986a,Eisner2002a}.  W51-e2e, on the other
-hand, is a more typical high-mass star-forming region in terms of its masers,
-exhibiting only \methanol, \water, and OH \citep{Goddi2016a}.
-We report here  the first detection of maser emission from CS $v=0$ in both
-the J=1-0 and J=2-1 transitions in W51-e2e.
+The W51 A high-mass star-forming region is one of the most massive and luminous
+in the Galaxy \citep{Ginsburg2017b}, and it is host to three high-mass
+protostellar systems with $>100$ \msun hot cores, W51 IRS2, W51 e2e, and W51 e8
+\citep{Ginsburg2017a}.  Among the known high-mass protostars exhibiting maser
+emission, W51 IRS2 stands out as host to some of the rarest maser transitions.
+It powers a large number ($>$ 20) of rare \ammonia maser lines as well as rare
+SiO masers \citep{Henkel2013a,Hasegawa1986a,Eisner2002a}.  W51 e2e and e8, on
+the other hand, are more typical high-mass star-forming region in terms of
+their maser emission, exhibiting only \methanol, \water, and OH masers
+\citep{Goddi2016a}.
+
+We have observed all three hot cores in the W51 A region in the two lowest
+transitions of CS, J=1-0 and J=2-1.  We report here the first detection of
+maser emission from CS $v=0$ in both the J=1-0 and J=2-1 transitions in
+W51-e2e and nondetections in the other two hot cores.
 
 
 
@@ -150,7 +164,8 @@ were taken in the most extended A array.
 For the ALMA data, both at 1 mm and 3 mm, we use the pipeline-produced
 calibrated data for the emission line maps.  The Band 6 (1 mm) continuum data
 were self-calibrated as described in \citet{Goddi2018a}, using  nine iterations
-of phase-only self-calibration.  
+of phase-only self-calibration; the solutions were only used for the continuum
+data.  
 
 The VLA data were calibrated with the EVLA pipeline with RFI flagging
 and hanning smoothing disabled.
@@ -220,11 +235,12 @@ peak is located at the base of the blueshifted outflow (Figure
     \includegraphics[width=\textwidth]{figures/W51e2e_sio_outflow_with_CS_contours.pdf}
     \caption{An image of the SiO 5-4 outflow (red and blue corresponding to
     red and blueshifted emission integrated over 74-118 \kms and -32 to 55
-    \kms, respectively) with continuum shown in green.  The contours show SiO
-    2-1 in red (0.05, 0.1 K \kms) and blue (0.1, 0.2 K \kms), the CS 2-1
+    \kms, respectively) with continuum shown in green.  The contours show
+    integrated SiO J=2-1 over the same ranges in red (0.05, 0.1 K \kms) and
+    blue (0.1, 0.2 K \kms), the CS 2-1
     maser in white (2000, 4000, 6000 peak intensity over -32 to 55 \kms),
     and the CS 1-0 maser in black (2000, 4000, 8000 K peak intensity over
-    the range 55-74 \kms).  For both the masers, the contours effectively
+    the range 55-74 \kms).  For both of the masers, the contours effectively
     indicate the beam size.}
     \label{fig:overlay}
 \end{figure*}
@@ -257,8 +273,8 @@ fixed amplitude of 6800 K.
 \begin{figure}[htp]
 \includegraphics[width=0.45\textwidth]{figures/CS1-0_maser_JyandK.pdf}
 \includegraphics[width=0.45\textwidth]{figures/CS2-1_maser_JyandK.pdf}
-\caption{Plots of the (a) CS 1-0 and (b) CS 2-1 spectra toward their
-respective peaks.}
+\caption{Plots of the (a) CS J=1-0 and (b) CS J=2-1 spectra toward their
+respective peak locations shown in Figure \ref{fig:overlay}.}
 \label{fig:spectra}
 \end{figure}
 
@@ -274,6 +290,10 @@ temperatures would more likely result in dissociation of the molecules
 At the observed spectral resolution of 3 \kms, the CS J=2-1 line is marginally
 resolved with FWHM=5.25 \kms ($\sigma=2.2 \kms$), and at 6 \kms resolution, the
 CS J=1-0 line is unresolved.
+The thermal line width of CS at 6000 K is FWHM=2.7 \kms ($\sigma=1.1$ \kms),
+smaller than the measured width of CS J=2-1 and smaller than the resolution
+of the CS J=1-0 data, so we cannot use these data to rule out a thermal
+line width.
 % The measured line width and the observed spectral resolution are both
 % much greater than the thermal width for CS at 6000 K, $v_{therm}\approx1~\kms$.
 %we cannot conclude anything about the intrinsic line width.
@@ -286,6 +306,13 @@ by about 190 AU), and therefore they are not emitted by the same material.
 This velocity difference rules out a thermal origin for either transition,
 since thermal lines should have comparable brightness in both transitions
 at similar velocities.
+
+The separation between the two maser spots in position and velocity hints
+that the masers could be produced at the extreme ends of a disk orbiting
+a central protostar.  The coincidence between the CS 1-0 maser peak and
+the 1 mm continuum peak is evidence against this hypothesis, but is not definitive:
+the midpoint of the SiO outflow is also not coincident with the 1 mm continuum
+peak.
 
 If we assume the masers trace orbiting material, their velocity and spatial
 separation can be used to infer the central source mass.  At a separation of 30
