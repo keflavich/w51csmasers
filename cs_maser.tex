@@ -43,29 +43,20 @@ disk winds in the circumstellar environments of protostars.
 While some chemical species, specifically \methanol, \water, and OH, are
 detected in hundreds of star-forming regions across the Galaxy, others are more
 rare, such as SiO (around young stars; SiO masers are common in evolved stars),
-H$_2$CO, and NH$_3$ \citep[e.g.,][]{Goddi2009a,Cho2016a,Ginsburg2015a,Goddi2015a,Mills2018b}.  
-%SORRY FOR THE SELF-PROMOTION. GODDI+2009 REPORTS ON RARE SIO ISOTOPOLOGUES, WITH TB OF A FEW THOUSANDS K...GODDI+2015 IS THE NH3 MASERS IN W51-NORTH
+H$_2$CO, and NH$_3$ \citep[e.g.,][]{Goddi2009b,Cho2016a,Ginsburg2015a,Goddi2015a,Mills2018b}.  
 The
 rarity of this latter group of masers is so far unexplained, though since they
 have only been detected toward high-mass star-forming regions
 \citep{Araya2015a,Wilson1993a,Hofner1994a,Cordiner2016a}, they are likely to
 be pumped by the strong radiation only present around high-mass protostars.
 
-{\color{red} Intro is relatively long for a short paper. I was wondering if we should move this entire pgh in a Discussion sect. on pumping after Sect. 3: }\\
-The rotational transitions of CS have been theorized to mase
-in some environments \citep{Schoenberg1988a}, but they have
-never previously been observed as masers in their ground state
-(\citealt{Highberger2000a} reported a possible maser from the CS v=1 J=3-2
-transition in IRC+10216).
-\citet{Schoenberg1988a}
-used an expanding shell model appropriate to evolved stars in which
-temperature, density, and velocity are all decreasing with radius corresponding
-to some mass loss rate and terminal wind velocity. They predict masing in the
-CS J=1-0 and J=2-1 lines under different conditions, though the masing is
-fairly weak (factors of a few).  In these models, the stellar infrared
-radiation drives the maser.  The similarity between the atmospheres
-of evolved stars and the innermost regions around accreting high-mass stars
-hints that these maser models may apply in both environments.
+% {\color{red} Intro is relatively long for a short paper. I was wondering if we
+% should move this entire pgh in a Discussion sect. on pumping after Sect. 3: }\\
+The rotational transitions of CS have been theorized to mase in some
+environments \citep{Schoenberg1988a}, and \citet{Highberger2000a} reported a
+possible maser from the CS v=1 J=3-2 transition in IRC+10216, but no masers
+have been observed in the rotational transitions of the vibrational
+ground-state of CS.
 
 
 The W51 A high-mass star-forming region (at a distance of 5.4 kpc -
@@ -117,7 +108,7 @@ sensitivity 1.3 mJy \perbeam (420 K).  We also imaged the CS v=1
 J=1-0 line
 at the same resolution with a sensitivity of $\sigma_{rms} = 1.1$ mJy \perbeam (350 K),
 but did not detect it.
-The SiO J=5-4 and {\color{red} J=2-1 ARE WE USING THIS LINE AT ALL?} lines and band 6 (1 mm) continuum were imaged with
+The SiO J=5-4 and J=2-1 lines and band 6 (1 mm) continuum were imaged with
 robust 0.5 weighting with beam sizes $0.041\arcsec\times0.035\arcsec$,
 PA=-44.8$^\circ$ and $0.079\arcsec\times0.053\arcsec$, PA=-42.8$^\circ$,
 respectively.
@@ -172,8 +163,13 @@ peak is located at the base of the blueshifted outflow (Figure
     maser in white (2000, 4000, 6000 peak intensity at 34.5 \kms),
     and the CS 1-0 maser in black (2000, 4000, 6000 K peak intensity at
     $\sim65.5$ \kms).  For each of the masers, the contours effectively
-    indicate the synthesized beam size.
-    {\color{red} IT IS NOT PROBABLY A VERY STRONG EVIDENCE, BUT IF YOU TAKE THE PA OF THE LINE CONNECTING THE TWO CS PEAKS, HOw FAR IS FROM PA(sio-outflow)+90?}
+    indicate the synthesized beam size.  The white, blue, and green
+    ellipses in the bottom left show the synthesized beam sizes of the SiO
+    J=2-1, SiO J=5-4, and 1 mm continuum images, respectively.
+    % {\color{red} IT IS NOT PROBABLY A VERY STRONG EVIDENCE, BUT IF YOU TAKE THE
+    % PA OF THE LINE CONNECTING THE TWO CS PEAKS, HOw FAR IS FROM
+    % PA(sio-outflow)+90?}
+    % Hard to say: the SiO outflow isn't super linear...
     }
     \label{fig:overlay}
 \end{figure*}
@@ -208,7 +204,9 @@ fixed amplitude of 6800 K.
 \includegraphics[width=0.45\textwidth]{figures/CS2-1_maser_JyandK.pdf}
 \caption{Plots of the (a) CS J=1-0 and (b) CS J=2-1 spectra toward their
 respective peak locations shown in Figure \ref{fig:overlay}.
-{\color{red} HOW ABOUT WE PLOT HERE THE Vsys of e2e? OR AT LEAST WE QUOTE IT }
+The vertical line shows the estimated velocity of W51 e2e from the NH$_3$
+(13, 13) line at 55.5 \kms \citep{Goddi2016a}.
+%{\color{red} HOW ABOUT WE PLOT HERE THE Vsys of e2e? OR AT LEAST WE QUOTE IT }
 }
 \label{fig:spectra}
 \end{figure}
@@ -228,23 +226,33 @@ resolved with ${\mathrm{FWHM} = 5.25~\kms}$ (${\sigma=2.2~\kms}$), and at 6
 at 6000 K is ${\mathrm{FWHM} = 2.7~\kms}$ (${\sigma=1.1~\kms}$),
 smaller than the measured width of CS J=2-1 and smaller than the resolution
 of the CS J=1-0 data. 
-\sout{Lines narrower than their thermal width can be produced if the maser is
-unsaturated}
- \citep[i.e., in the exponential amplification
-regime;][]{Elitzur1982a}. 
-\sout{Since the CS J=2-1 maser line is resolved, it is likely saturated, while the spectral resolution of our data is inadequate to determine whether the CS J=1-0 is saturated or unsaturated.}
-{\color{red} IT IS TRUE THAT TOWARDS SATURATION LINES BROADENS, BUT YOU HAVE ALWAYS $DW_{maser} <DW_{thermal}$. Discriminating between saturated and unsaturated regime based solely on DW is difficult. So we cannot say that one line is saturated and the other one is not. When you have $DW_{maser} > DW_{thermal}$ is simply because of gas kinematics, i.e. we are seeing multiple blended velocity components}
+Lines narrower than their thermal width are a clear indication of maser
+emission \citep{Elitzur1982a}, but our observations have too coarse resolution
+to identify such narrow widths if they are present.
+% \sout{Lines narrower than their thermal width can be produced if the maser is
+% unsaturated}
+%  \citep[i.e., in the exponential amplification
+% regime;][]{Elitzur1982a}. 
+% \sout{Since the CS J=2-1 maser line is resolved, it is likely saturated, while
+% the spectral resolution of our data is inadequate to determine whether the CS
+% J=1-0 is saturated or unsaturated.}
+% {\color{red} IT IS TRUE THAT TOWARDS SATURATION LINES BROADENS, BUT YOU HAVE
+% ALWAYS $DW_{maser} <DW_{thermal}$. Discriminating between saturated and
+% unsaturated regime based solely on DW is difficult. So we cannot say that one
+% line is saturated and the other one is not. When you have $DW_{maser} >
+% DW_{thermal}$ is simply because of gas kinematics, i.e. we are seeing multiple
+% blended velocity components}
 
 
-While both transitions have a consistent peak brightness of $\sim6800$ K,
-\sout{which is below that typical of maser transitions in other molecules}
-{\color{red} [well this depends on the angular resolution. After all we can only provide a lower limit to Tb. I would not say this.]}, these
-emission peaks are at different velocities and may be from different spatial
-locations (separated
-by about 190 AU).  Therefore, they are not emitted by the same material.
-This velocity difference rules out a thermal origin for either transition,
-since thermal lines should have comparable brightness in both transitions
-at similar velocities.
+The high observed brightness temperature is evidence that these transitions are
+masing, but it is just low enough that a thermal mechanism could still be
+considered.  However, the locations of the emission features provides
+additional and definitive evidence that they are masing.  The emission peaks
+are at clearly different velocities and they may be from different spatial
+locations (separated by about 190 AU).  They are therefore not emitted by the
+same material.  This velocity difference rules out a thermal origin for either
+transition, since thermal lines should have comparable brightness in both
+transitions at similar velocities.
 
 The separation between the two maser spots in position and velocity hints
 that the masers could be produced at the extreme ends of a disk orbiting
@@ -252,7 +260,10 @@ a central protostar.  The coincidence between the CS 1-0 maser peak and
 the 1 mm continuum peak is evidence against this hypothesis, but is not definitive:
 the midpoint of the SiO outflow is also not coincident with the 1 mm continuum
 peak.
-{\color{red} We are basically saying that we cannot constrain the location of the YSO at that level. I think in goddi+2018 we do some analysis on the location of the YSO? comparing SiO midpoint and continuum peak. Better to quote a number - we locate the YSO within X mas.....}
+{\color{red} We are basically saying that we cannot constrain the location of
+the YSO at that level. I think in goddi+2018 we do some analysis on the
+location of the YSO? comparing SiO midpoint and continuum peak. Better to quote
+a number - we locate the YSO within X mas.....}
 
 If we assume the masers trace orbiting material, their velocity and spatial
 separation can be used to infer the central source mass.  At a separation of 30
@@ -290,6 +301,17 @@ subject to this concern, since there is no foreground material at that
 velocity, but it is possible that a 2-1 maser exists near 65 \kms and is fully
 absorbed by foreground cloud material.
 
+
+Masers from CS have been predicted in the atmospheres of evolved stars.
+\citet{Schoenberg1988a}
+used an expanding shell model appropriate to evolved stars in which
+temperature, density, and velocity are all decreasing with radius corresponding
+to some mass loss rate and terminal wind velocity. They predict masing in the
+CS J=1-0 and J=2-1 lines under different conditions, though the masing is
+fairly weak (factors of a few).  In these models, the stellar infrared
+radiation drives the maser.  The similarity between the atmospheres
+of evolved stars and the innermost regions around accreting high-mass stars
+hints that these maser models may apply in both environments.
 {\color{red}
 I WOULD RATHER SEE A DISCUSSION ON THE PUMPING HERE (WHAT IS NOW IN THE INTRO} 
 
