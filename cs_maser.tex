@@ -195,9 +195,9 @@ Line Name & Amplitude & $v_{LSR}$ & $\sigma_{FWHM}$ & RA (ICRS) & Dec (ICRS) \\
 \end{tabular}
 \label{tab:linepars}
 \par
-Because of the coarse spectral resolution, the amplitude of the CS 1-0 line is
-poorly constrained, and we report its fitted width and centroid assuming a
-fixed amplitude of 6800 K.
+% Because of the coarse spectral resolution, the amplitude of the CS 1-0 line is
+% poorly constrained, and we report its fitted width and centroid assuming a
+% fixed amplitude of 6800 K.
 \end{table*}
 
 
@@ -278,6 +278,7 @@ seen around each of the HMYSOs.  This difference indicates that there is
 something unique about the chemistry, geometry, or excitation in the W51 e2e
 that drives these particular maser transitions.
 
+
 The detection of CS 1-0 emission at $\sim65$ \kms is actually quite surprising,
 since W51 e2e is deeply embedded in a high column density molecular medium that
 covers this velocity.  
@@ -287,10 +288,6 @@ Since the maser is detected, there must either be a hole
 in the cloud through which we are seeing the compact emission, or the
 foreground cloud's CS
 is highly excited and has a minimal ground-state population at 65 \kms. 
-% {\color{red} WHY WOULD IT BE EXCITED? IT SEEMS A AD-HOC EXPLANATION TO ME, NOT
-% A *LIKELY* ONE....}  I agree.  I think it is more likely because a hole is
-% totally implausible, while high excitation is certain.  But we don't need
-% to go into that.
 The J=2-1 transition at 34.5 \kms is not
 subject to this concern, since there is no foreground material at that
 velocity, but it is possible that a 2-1 maser exists near 65 \kms and is fully
@@ -307,9 +304,6 @@ fairly weak (factors of a few).  In these models, the stellar infrared
 radiation drives the maser.  The similarity between the atmospheres
 of evolved stars and the innermost regions around accreting high-mass stars
 hints that these maser models may apply in both environments.
-% {\color{red}
-% I WOULD RATHER SEE A DISCUSSION ON THE PUMPING HERE (WHAT IS NOW IN THE INTRO} 
-% Done!
 
 %It is possible that a region within a few AU of the the central MYSO is heated
 %to such high temperatures.  To provide a high enough column density of CS
@@ -327,6 +321,16 @@ hints that these maser models may apply in both environments.
     }
     \label{fig:channelmaps}
 \end{figure*}
+
+% Note about other masers:
+Finally, we note that no other masers detected in the region coincide with the
+CS masers.  The closest OH and water masers \citep{Fish2007a,Sato2010a} are
+separated by $>0.2\arcsec$ ($>1000$ AU).  There are some \methanol maser spots
+with positions consistent with W51e2e's core and
+with the CS masers at a velocity $\sim60$ \kms, but the most likely position is
+also well away from the CS maser spot centroid \citep{Etoks2012a,Surcis2012a}.
+No other known masers are clearly emitted from the same positions as the CS
+masers.
 
 \section{Conclusions}
 We have detected two emission lines from the J=2-1 and J=1-0 transitions of CS
@@ -394,6 +398,32 @@ variability across four observing epochs (2016-10-02, 2016-12-26, 2016-12-30,
 2017-01-07; the former was not included in our merged data set because we were unable
 to perform bandpass calibration).  The position remained constant and the flux
 remained consistent to within single-epoch observing errors.
+
+\section{Additional figures showing other maser locations}
+\begin{figure*}[htp]
+    \includegraphics[width=\textwidth]{figures/W51e2e_sio_outflow_with_CS_contours_and_ch3oh.png}
+    \caption{Figure \ref{fig:overlay} reproduced with \methanol maser spots from \citet{Etoka2012a}
+    overlaid.  The absolute astrometric uncertainty is not known.
+    }
+    \label{fig:overlay}
+\end{figure*}
+
+\begin{figure*}[htp]
+    \includegraphics[width=\textwidth]{figures/W51e2e_sio_outflow_with_CS_contours_and_oh.png}
+    \caption{Figure \ref{fig:overlay} reproduced with OH maser spots from \citet{Fish2007a}
+    overlaid.  The absolute astrometric uncertainty is not known.
+    }
+    \label{fig:overlay}
+\end{figure*}
+
+\begin{figure*}[htp]
+    \includegraphics[width=\textwidth]{figures/W51e2e_sio_outflow_with_CS_contours_and_h2o.png}
+    \caption{Figure \ref{fig:overlay} reproduced with OH maser spots from \citet{Sato2010a}
+    overlaid.  The absolute astrometric uncertainty is not known.
+    }
+    \label{fig:overlay}
+\end{figure*}
+
 
 \input{solobib}
 \end{document}
